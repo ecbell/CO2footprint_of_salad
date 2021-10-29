@@ -32,6 +32,8 @@ This project will be implemented with the following technologies:
 
 Wireframe: https://wireframe.cc/AGwWQh 
 
+<img width="780" alt="Screen Shot 2021-10-28 at 11 31 55 PM" src="https://user-images.githubusercontent.com/89127270/139376848-cbec0b42-da9b-411c-8517-ad6a7704caf1.png">
+
 <h3>Implementation Timeline</h3>
 
 Friday Afternoon & Weekend: Setup project file structure properly, access all relevant (API) images and data needed for the ingredients. Get functionality for a simple dropdown menu and about menu showing up on the webpage that the user can interact with. 
