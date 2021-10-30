@@ -11,12 +11,15 @@
   display: flex;
   justify-content:space-between;
   align-items:flex-start;  
+  box-sizing: content-box;
+  width: 100%;
 
 }
 .title {
   font-size: 80px;
   border: solid 2px;
-  inline-size: 400px;
+  /* inline-size: 400px; */
+  
 }
 
 .nav-bar {
@@ -24,6 +27,8 @@
   font-size:25px;
   padding:10px;
   margin-top: 55px;
+  margin-left: 15px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   margin: 10 auto;
@@ -33,6 +38,20 @@
 .about-info {
   border: solid 1px;
   width: 400px;
+  font-size:25px;
+  padding:10px;
+  margin-top: -20px;
+}
+
+#average-co2-footprint {
+  margin: 10px;
+  border: solid 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  height: 90vh;
 }
 
 
