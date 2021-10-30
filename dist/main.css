@@ -7,6 +7,32 @@
   color: blue;
 }
 
-h1 {
-  font-size: 50px;
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items:flex-start;  
+
 }
+.title {
+  font-size: 80px;
+  border: solid 2px;
+  inline-size: 400px;
+}
+
+.nav-bar {
+  border: solid 1px;
+  font-size:25px;
+  padding:10px;
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  margin: 10 auto;
+  width: 650px;
+}
+
+.about-info {
+  border: solid 1px;
+  width: 400px;
+}
+
+
