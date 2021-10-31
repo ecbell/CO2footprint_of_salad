@@ -96,3 +96,10 @@ img {
 
 
 
+.image:hover p {
+  display: inline-block;
+}
+/* look whose the sibling. that is going to be the p tag that you show */
+
+
+

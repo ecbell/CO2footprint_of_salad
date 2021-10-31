@@ -6,6 +6,13 @@ class dropDown {
     this.parent.addEventListener('mouseenter', this.handleEnter.bind(this));
     this.parent.addEventListener('mouseleave', this.handleLeave.bind(this));
     document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
+    const image = document.getElementsByClassName("image");
+    
+    // for (let i = 0; i < image.length; i++) {
+    //   const element = image[i];
+    //   element.addEventListener("mouseover", this.mouseOverImage.bind(this))
+    // }
+    
   }
 
   createLi() {
@@ -30,15 +37,32 @@ class dropDown {
 
 
   clickEvent(e) {
-    // console.log(e.target.innerText)
-    let link = document.createElement("img");
-    let carbonPerItem = document.createElement("p")
-    carbonPerItem.className = "CO2-ticker"
-    carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
-    // console.log(carbonPerItem.innerHTML)
-    link.src = this.ingredients[e.target.innerText].img;
-    document.getElementsByClassName('image')[0].appendChild(carbonPerItem);
-    document.getElementsByClassName('image')[0].appendChild(link);
+    // console.log(e.target.innerText) 
+    if (e.currentTarget !== e.target) {
+      let link = document.createElement("img");
+      const carbonPerItem = document.createElement("p")
+      // carbonPerItem.className = "CO2-ticker"
+      carbonPerItem.id = e.target.innerText
+      carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
+      carbonPerItem.setAttribute('hidden', true)
+      link.src = this.ingredients[e.target.innerText].img;
+  
+      document.getElementsByClassName('image')[0].appendChild(carbonPerItem);
+      document.getElementsByClassName('image')[0].appendChild(link);
+    }
+  }
+
+    mouseOverImage(e) {
+      // console.log(e.target)
+
+      const pTags = document.querySelectorAll("p")
+      for (let i = 0; i < pTags.length; i++) {
+        const el = pTags[i];
+        // console.log(el)
+      if (this.ingredients[el.id].img === e.target.src) {
+        el.removeAttribute('hidden')
+      }
+    }
   }
 }
 
