@@ -16,7 +16,8 @@ console.log("Hello World");
   items.createLi()
 
   // create mouseover events for all images
-
+  const mousingOver = new carbonFootprint(ingredients)
+  
 })
 
 

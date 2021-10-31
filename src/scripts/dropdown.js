@@ -32,8 +32,12 @@ class dropDown {
   clickEvent(e) {
     // console.log(e.target.innerText)
     let link = document.createElement("img");
+    let carbonPerItem = document.createElement("p")
+    carbonPerItem.className = "CO2-ticker"
+    carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
+    // console.log(carbonPerItem.innerHTML)
     link.src = this.ingredients[e.target.innerText].img;
-    console.log(link.src)
+    document.getElementsByClassName('image')[0].appendChild(carbonPerItem);
     document.getElementsByClassName('image')[0].appendChild(link);
   }
 }
