@@ -3,6 +3,8 @@ class dropDown {
     this.parent = parent
     this.ingredients = ingredients
 
+    this.parent.addEventListener('mouseenter', this.handleEnter.bind(this));
+    this.parent.addEventListener('mouseleave', this.handleLeave.bind(this));
   }
 
   createLi() {
@@ -16,13 +18,22 @@ class dropDown {
     });
   }
     
-  createEventListener() {
-    // next step add event listener on ul
-    const items = document.querySelectorAll(".item");
-    items.forEach(child => child.classList.remove('open'));
-  }
+    handleLeave() {
+      const items = document.querySelectorAll(".item");
+      items.forEach(child => child.classList.remove('open'));
+    };
+
+    handleEnter() {
+      const items = document.querySelectorAll(".item");
+      items.forEach(child => child.classList.add('open'));
+    };
+
+
+    // append child for every time someone clicks on an ingredient. 
+    // From that ingredient and take it's image link
+    // create a new image tag , add newe src 
+
 }
 
-// event listeners on list items, add attribute for hidden for each li. 
-// hidden 
+
 export default dropDown

@@ -13,8 +13,8 @@
   align-items:flex-start;  
   box-sizing: content-box;
   width: 100%;
-
 }
+
 .title {
   font-size: 80px;
   border: solid 2px;
@@ -40,7 +40,6 @@
   font-size:25px;
   padding:10px;
   margin-top: -20px;
-  
 }
 
 #average-co2-footprint {
@@ -60,6 +59,22 @@
   align-items:flex-start;  
   box-sizing: content-box;
   width: 100%;
+}
+
+.item {
+  display: none;
+  color:#767B91;
+  text-decoration: none;
+}
+
+.item.open {
+  display: block;
+  margin: 5px 5px 10px 5px;
+  font-size: 16px;
+}
+
+.item.open::after {
+  padding: 20px
 }
 
 
