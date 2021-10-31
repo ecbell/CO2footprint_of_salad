@@ -37,11 +37,9 @@ class dropDown {
 
 
   clickEvent(e) {
-    // console.log(e.target.innerText) 
     if (e.currentTarget !== e.target) {
       let link = document.createElement("img");
       const carbonPerItem = document.createElement("p")
-      // carbonPerItem.className = "CO2-ticker"
       carbonPerItem.id = e.target.innerText
       carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
       carbonPerItem.setAttribute('hidden', true)
@@ -53,12 +51,10 @@ class dropDown {
   }
 
     mouseOverImage(e) {
-      // console.log(e.target)
-
       const pTags = document.querySelectorAll("p")
       for (let i = 0; i < pTags.length; i++) {
         const el = pTags[i];
-        // console.log(el)
+
       if (this.ingredients[el.id].img === e.target.src) {
         el.removeAttribute('hidden')
       }
