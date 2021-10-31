@@ -61,6 +61,13 @@
   width: 100%;
 }
 
+#dropdown {
+  border: solid 1px;
+  height: 100px;
+  overflow: auto;
+  width: 50%;
+}
+
 .item {
   display: none;
   color:#767B91;

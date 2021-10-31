@@ -51,3 +51,8 @@ Thursday Morning: Deploy to GitHub pages. If time, rewrite this proposal as a pr
 2. Add option for user to choose region. Based on that, shows a list and distribution of fresh produce grown in that region.
 3. Refactor CO2 footprint of vegetables based on region. I.e. peaches grown and sold in Georgia have less of a carbon footprint than transported, processed, and sold in New England.
 4. Interactive visual of a US map on distribution of veggies, fruits and nuts/legumes grown in the USA. There is also potential to add data on imports/ exports per region on this map. 
+
+
+
+
+https://giphy.com/gifs/playkids-children-junior-junioronthejob-3ornk8GpxBL3AFvdXG
