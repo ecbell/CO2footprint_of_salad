@@ -6,6 +6,7 @@ class dropDown {
     this.parent.addEventListener('mouseenter', this.handleEnter.bind(this));
     this.parent.addEventListener('mouseleave', this.handleLeave.bind(this));
     document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
+    
     const image = document.getElementsByClassName("image");
     
     // for (let i = 0; i < image.length; i++) {

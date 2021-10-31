@@ -1,7 +1,7 @@
 // import Example from "./scripts/example";
 import ingredients from "./scripts/items";
 import dropDown from "./scripts/dropdown"
-import carbonFootprint from "./scripts/carbon_footprint"
+import carbonCounter from "./scripts/carbon_counter"
 
 document.addEventListener("DOMContentLoaded",() => {
 console.log("Hello World");
@@ -15,9 +15,9 @@ console.log("Hello World");
   const items = new dropDown(element, ingredients)
   items.createLi()
 
-  // create mouseover events for all images
-  const mousingOver = new carbonFootprint(ingredients)
-  
+  // create counter
+  const counter = new carbonCounter(ingredients)
+
 })
 
 
