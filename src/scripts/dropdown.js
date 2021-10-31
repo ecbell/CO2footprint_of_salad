@@ -5,7 +5,7 @@ class dropDown {
 
     this.parent.addEventListener('mouseenter', this.handleEnter.bind(this));
     this.parent.addEventListener('mouseleave', this.handleLeave.bind(this));
-    // document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
+    document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
   }
 
   createLi() {
@@ -18,30 +18,24 @@ class dropDown {
     });
   }
     
-    handleLeave() {
-      const items = document.querySelectorAll(".item");
-      items.forEach(child => child.classList.remove('open'));
-    };
+  handleLeave() {
+    const items = document.querySelectorAll(".item");
+    items.forEach(child => child.classList.remove('open'));
+  };
 
-    handleEnter() {
-      const items = document.querySelectorAll(".item");
-      items.forEach(child => child.classList.add('open'));
-    };
-
-
-    clickEvent() {
-      let link = document.createElement("img");
-      link.src = this.ingredients[item].img;
-      li = document.querySelector("#item")
-      li.appendChild(link)
-    }
-    // add Eventlister for click, and generate new img tag and appendchild 
+  handleEnter() {
+    const items = document.querySelectorAll(".item");
+    items.forEach(child => child.classList.add('open'));
+  };
 
 
-    // append child for every time someone clicks on an ingredient. 
-    // From that ingredient and take it's image link
-    // create a new image tag , add new src 
-
+  clickEvent(e) {
+    console.log(e.target.innerText)
+    let link = document.createElement("img");
+    link.src = this.ingredients[e.target.innerText].img;
+    console.log(link.src)
+    document.getElementsByClassName('image')[0].appendChild(link);
+  }
 }
 
 
