@@ -16,7 +16,7 @@ console.log("Hello World");
   items.createLi()
 
   // create counter
-  const counter = new carbonCounter(ingredients)
+  const counter = new carbonCounter(element, ingredients)
 
 })
 
