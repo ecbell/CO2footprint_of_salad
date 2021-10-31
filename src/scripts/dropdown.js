@@ -30,7 +30,7 @@ class dropDown {
 
 
   clickEvent(e) {
-    console.log(e.target.innerText)
+    // console.log(e.target.innerText)
     let link = document.createElement("img");
     link.src = this.ingredients[e.target.innerText].img;
     console.log(link.src)
