@@ -6,8 +6,8 @@ class dropDown {
     this.parent.addEventListener('mouseenter', this.handleEnter.bind(this));
     this.parent.addEventListener('mouseleave', this.handleLeave.bind(this));
     document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
-    
-    const image = document.getElementsByClassName("image");
+
+    this.parent.addEventListener("click", this.removeImage.bind(this));
     
     // for (let i = 0; i < image.length; i++) {
     //   const element = image[i];
@@ -51,14 +51,33 @@ class dropDown {
     }
   }
 
-    mouseOverImage(e) {
-      const pTags = document.querySelectorAll("p")
-      for (let i = 0; i < pTags.length; i++) {
-        const el = pTags[i];
+  //   mouseOverImage(e) {
+  //     const pTags = document.querySelectorAll("p")
+  //     for (let i = 0; i < pTags.length; i++) {
+  //       const el = pTags[i];
 
-      if (this.ingredients[el.id].img === e.target.src) {
-        el.removeAttribute('hidden')
-      }
+  //     if (this.ingredients[el.id].img === e.target.src) {
+  //       el.removeAttribute('hidden')
+  //     }
+  //   }
+  // }
+
+  removeImage(e) {
+    let parentImg = document.querySelectorAll('.image')
+    console.log(parentImg);
+    console.log(e.currentTarget);
+    let currentImages = document.querySelectorAll("p")
+    console.log(currentImages[0].id)
+    console.log(this.ingredients[e.target.innerText].img)
+    for (let i = 0; i < currentImages.length; i++) {
+      const el = currentImages[i] 
+      el.id 
+      
+
+      // closeImg[i].addEventListener('click', function () {
+      //   var imgWrap = this.parentElement;
+      //   parentImg.removeChild(imgWrap);
+      // });
     }
   }
 }
