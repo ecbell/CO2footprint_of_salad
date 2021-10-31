@@ -1,13 +1,13 @@
 
 const ingredients = {
   'avocado': {
-    'averageCO2': '423.18 gCO2e',
+    'averageCO2': 423.18,
     'serving': '1 avocado',
     'img':'https://c.tenor.com/PoQiAy3gTYcAAAAj/avocado-avocado-toast.gif'
   },
 
   'hard cheese': {
-    'averageCO2': '12 kgCO2e',
+    'averageCO2': 12,
     'serving': '1 kg',
     'img': 'https://media.baamboozle.com/uploads/images/197603/1618396623_5032.gif'
 
