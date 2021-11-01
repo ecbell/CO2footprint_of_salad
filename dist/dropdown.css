@@ -1,0 +1,22 @@
+#dropdown {
+  border: solid 1px;
+  height: 100px;
+  overflow: auto;
+  width: 50%;
+}
+
+.item {
+  display: none;
+  color:#767B91;
+  text-decoration: none;
+}
+
+.item.open {
+  display: block;
+  margin: 5px 5px 10px 5px;
+  font-size: 16px;
+}
+
+.item.open::after {
+  padding: 20px
+}

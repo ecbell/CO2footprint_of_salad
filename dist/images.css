@@ -1,0 +1,14 @@
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#salad-bowl {
+  width: 400px;
+  height: 500px
+}
+
+
+.image:hover p {
+  display: inline-block;
+}

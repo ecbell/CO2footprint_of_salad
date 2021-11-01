@@ -2,171 +2,19 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
 
+  @import url(header.css);
+  @import url(about.css);
+  @import url(counter.css);
+  @import url(dropdown.css);
+  @import url(images.css);
 
-/* #main {
-  color: blue;
+/* .styling {
+  display: flex;
+  justify-content:space-between;
+  align-items:flex-start;  
+  box-sizing: content-box;
+  width: 100%;
 } */
-
-body {
-  background-image: url('../assets/thin-leaves.jpg');
-}
-
-.header {
-  display: flex;
-  justify-content:space-between;
-  align-items:flex-start;  
-  box-sizing: content-box;
-  width: 100%;
-}
-
-.title {
-  /* border: 2px;
-  border-style:dashed;
-  border-color:grey;
-  border-radius: 10px; */
-  width: 100%;
-  text-align: center;
-  font-family: 'Neucha', cursive;
-  font-size: 80px;
-  font-weight: 200;
-  color: darkgreen;
-}
-
-.nav-bar {
-  padding: 1px;
-  margin-top: 55px;
-  margin-left: 15px;
-  width: 650px;;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-.nav-bar > li {
-  list-style: none;
-  float: left;
-  font-size: 15px;
-  text-align: center;
-}
-
-  .nav-bar {
-    font-weight: bold;
-
-  }
-
-  .nav-bar a {
-    display: block;
-    padding: 20px;
-  }
-
-  .nav-bar a:hover {
-    background: cornsilk;
-  }
-
-.about-info {
-  background-color: #eee;
-  display: block;
-  width: 100%;
-  color: #444;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.2s;
-}
-
-.about-info::after {
-  content: '\125be';
-  float: right;
-  transform: scale(1.5);
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.about-info:hover {
-  background-color: #ccc;
-}
-
-.about-info--active {
-  background: grey;
-}
-
-.about-info--active::after {
-  content: '\125b4';
-}
-
-.about-content {
-  padding: 0 15px;
-  overflow: hidden;
-  display: block;
-  max-height: 0px;
-  transition: max-height 0.2s;
-  background-color: #f1f1f1;
-}
-
-#carbon-counter {
-  margin: 10px;
-  /* border: solid 1px; */
-  /* margin-top: -100px; */
-  width: 40% ;
-  padding:50px;
-  font-size: 40px;
-  color: tomato;
-  margin-left: 15px;
-  margin-right: 10px;
-
-}
-
-.styling {
-  display: flex;
-  justify-content:space-between;
-  align-items:flex-start;  
-  box-sizing: content-box;
-  width: 100%;
-}
-
-#dropdown {
-  border: solid 1px;
-  height: 100px;
-  overflow: auto;
-  width: 50%;
-}
-
-.item {
-  display: none;
-  color:#767B91;
-  text-decoration: none;
-}
-
-.item.open {
-  display: block;
-  margin: 5px 5px 10px 5px;
-  font-size: 16px;
-}
-
-.item.open::after {
-  padding: 20px
-}
-
-img {
-  width: 100px;
-  height: 100px;
-}
-
-#salad-bowl {
-  width: 400px;
-  height: 500px
-}
-
-
-.image:hover p {
-  display: inline-block;
-}
-/* look whose the sibling. that is going to be the p tag that you show */
 
 
 

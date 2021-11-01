@@ -12,17 +12,11 @@ document.addEventListener("DOMContentLoaded",() => {
   const items = new dropDown(element, ingredients)
   items.createLi()
 
-  // create counter
-  // const counter = new carbonCounter(element, ingredients)
-
-  // creat collabsible about section
+  // creat collabsible About section
   document.querySelectorAll(".about-info").forEach(button => {
     button.addEventListener('click', () => {
       const aboutContent = button.nextElementSibling;
-      console.log(aboutContent.style.maxHeight)
-      console.log(aboutContent.scrollHeight)
       button.classList.toggle('about-info--active');
-
       if (button.classList.contains('about-info--active')) {
         aboutContent.style.maxHeight = aboutContent.scrollHeight + 'px'
       } else {
@@ -30,7 +24,6 @@ document.addEventListener("DOMContentLoaded",() => {
       }
     })
   })
-
 
 })
 

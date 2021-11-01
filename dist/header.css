@@ -1,0 +1,53 @@
+body {
+  background-image: url('../assets/thin-leaves.jpg');
+}
+
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items:flex-start;  
+  box-sizing: content-box;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  font-size: 80px;
+  font-weight: 200;
+  color: darkgreen;
+}
+
+.nav-bar {
+  padding: 1px;
+  margin-top: 55px;
+  margin-left: 15px;
+  width: 650px;;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-bar > li {
+  list-style: none;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+}
+
+  .nav-bar {
+    font-weight: bold;
+
+  }
+
+  .nav-bar a {
+    display: block;
+    padding: 20px;
+  }
+
+  .nav-bar a:hover {
+    background: cornsilk;
+  }
