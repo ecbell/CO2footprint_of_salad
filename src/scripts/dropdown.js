@@ -28,6 +28,7 @@ class dropDown {
     
   handleLeave() {
     const items = document.querySelectorAll(".item");
+    console.log(items)
     items.forEach(child => child.classList.remove('open'));
   };
 
@@ -40,13 +41,14 @@ class dropDown {
   clickEvent(e) {
     if (e.currentTarget !== e.target) {
       let link = document.createElement("img");
-      const carbonPerItem = document.createElement("p")
-      carbonPerItem.id = e.target.innerText
-      carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
-      carbonPerItem.setAttribute('hidden', true)
+      // const carbonPerItem = document.createElement("p")
+      // carbonPerItem.id = e.target.innerText
+      // carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
+      // carbonPerItem.setAttribute('hidden', true)
       link.src = this.ingredients[e.target.innerText].img;
+      link.id = e.target.innerText;
   
-      document.getElementsByClassName('image')[0].appendChild(carbonPerItem);
+      // document.getElementsByClassName('image')[0].appendChild(carbonPerItem);
       document.getElementsByClassName('image')[0].appendChild(link);
     }
   }
@@ -64,21 +66,22 @@ class dropDown {
 
   removeImage(e) {
     let parentImg = document.querySelectorAll('.image')
-    console.log(parentImg);
-    console.log(e.currentTarget);
+    // console.log(parentImg)
+  
     let currentImages = document.querySelectorAll("p")
-    console.log(currentImages[0].id)
-    console.log(this.ingredients[e.target.innerText].img)
-    for (let i = 0; i < currentImages.length; i++) {
-      const el = currentImages[i] 
-      el.id 
+    // console.log(currentImages)
+    // console.log(this.ingredients[e.target.innerText].img)
+    // for (let i = 0; i < currentImages.length; i++) {
+    //   const el = currentImages[i] 
+    //   console.log(el)
+    //   parentImg.removeChild(el)
       
 
-      // closeImg[i].addEventListener('click', function () {
-      //   var imgWrap = this.parentElement;
-      //   parentImg.removeChild(imgWrap);
-      // });
-    }
+    //   // closeImg[i].addEventListener('click', function () {
+    //   //   var imgWrap = this.parentElement;
+    //   //   parentImg.removeChild(imgWrap);
+    //   // });
+    // }
   }
 }
 
