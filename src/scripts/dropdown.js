@@ -61,25 +61,8 @@ class dropDown {
     }
 
   removeImage(e) {
-    let parentImg = document.querySelectorAll('.image')
-    // console.log(parentImg[0].children)
-    let childImage = parentImg[0].children
-    // childImage[0].remove()
-    for (let i = 0; i < childImage.length - 1; i++) {
-      childImage[i].remove()
-
-      // console.log(parentImg[0])
-      // console.log(el.remove())
-      
-    }
-
-    
-
-    //   // closeImg[i].addEventListener('click', function () {
-    //   //   var imgWrap = this.parentElement;
-    //   //   parentImg.removeChild(imgWrap);
-    //   // });
-    // }
+    let parentImg = document.querySelector('.image')
+    e.target.remove();
   }
 }
 
