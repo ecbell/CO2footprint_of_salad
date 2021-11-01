@@ -3,11 +3,8 @@ import ingredients from "./scripts/items";
 import dropDown from "./scripts/dropdown"
 // import carbonCounter from "./scripts/carbon_counter"
 
-document.addEventListener("DOMContentLoaded",() => {
-console.log("Hello World");
-// const main = document.getElementById("main");
-// new Example(main);
 
+document.addEventListener("DOMContentLoaded",() => {
   const element = document.getElementById("dropdown")
   console.log(element)
 
@@ -17,6 +14,23 @@ console.log("Hello World");
 
   // create counter
   // const counter = new carbonCounter(element, ingredients)
+
+  // creat collabsible about section
+  document.querySelectorAll(".about-info").forEach(button => {
+    button.addEventListener('click', () => {
+      const aboutContent = button.nextElementSibling;
+      console.log(aboutContent.style.maxHeight)
+      console.log(aboutContent.scrollHeight)
+      button.classList.toggle('about-info--active');
+
+      if (button.classList.contains('about-info--active')) {
+        aboutContent.style.maxHeight = aboutContent.scrollHeight + 'px'
+      } else {
+        aboutContent.style.maxHeight = 0;
+      }
+    })
+  })
+
 
 })
 
