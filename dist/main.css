@@ -7,6 +7,10 @@
   color: blue;
 } */
 
+body {
+  background-image: url('../assets/thin-leaves.jpg');
+}
+
 .header {
   display: flex;
   justify-content:space-between;
