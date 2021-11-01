@@ -61,7 +61,7 @@ class dropDown {
     }
   }
 
-  // Create functionality for a counter
+  // Create functionality to count carbon 
   handleclick(e) {
     if (e.currentTarget !== e.target) {
       this.numImages += 1
@@ -82,5 +82,6 @@ class dropDown {
 
   
 }
+
 
 export default dropDown

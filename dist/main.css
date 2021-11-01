@@ -8,13 +8,20 @@
   @import url(dropdown.css);
   @import url(images.css);
 
-/* .styling {
-  display: flex;
-  justify-content:space-between;
-  align-items:flex-start;  
-  box-sizing: content-box;
-  width: 100%;
-} */
+.styling {
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  /* justify-content:space-between; */
+  /* align-items:flex-start;   */
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+  /* display: flex;
+  justify-content:space-around; */
+  /* align-items:flex-start;   */
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+}
+
 
 
 

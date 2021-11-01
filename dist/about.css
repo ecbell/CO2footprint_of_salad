@@ -1,16 +1,19 @@
 .about-info {
-  background-color: #eee;
-  display: block;
-  width: 100%;
-  color: #444;
+  background-color: #568203;
+  color: white;
   cursor: pointer;
   padding: 15px;
-  width: 100%;
   border: none;
   text-align: left;
-  outline: none;
-  font-size: 15px;
+  /* outline: none; */
+  font-size: 20px;
   transition: 0.2s;
+}
+
+.about-info, .about-content{
+  width: 50%;
+  display: inline-block;
+
 }
 
 .about-info::after {
@@ -19,13 +22,12 @@
   transform: scale(1.5);
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .about-info:hover {
-  background-color: #ccc;
+  background-color: #87A96B;
 }
 
 .about-info--active {
-  background: grey;
+  background: #568203;
 }
 
 .about-info--active::after {
@@ -34,9 +36,11 @@
 
 .about-content {
   padding: 0 15px;
+ /* display: inline-block; */
+  flex-flow: row wrap; 
   overflow: hidden;
-  display: block;
   max-height: 0px;
+  color: whitesmoke;
   transition: max-height 0.2s;
-  background-color: #f1f1f1;
+  background-color: #A9BA9D;
 }
