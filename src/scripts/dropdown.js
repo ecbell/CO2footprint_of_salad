@@ -1,3 +1,5 @@
+import carbonCounter from "./carbon_counter"
+
 class dropDown {
   
   constructor (parent, ingredients) {
@@ -9,12 +11,9 @@ class dropDown {
     document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
     
     let image = document.getElementsByClassName("image")
-
     image[0].addEventListener("click", this.removeImage.bind(this));
-    
     image[0].addEventListener("mouseover", this.mouseOverImage.bind(this))
 
-    
   }
 
   createLi() {
@@ -41,14 +40,10 @@ class dropDown {
   clickEvent(e) {
     if (e.currentTarget !== e.target) {
       let link = document.createElement("img");
-      // const carbonPerItem = document.createElement("p")
-      // carbonPerItem.id = e.target.innerText
-      // carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
-      // // carbonPerItem.setAttribute('hidden', true)
+    
       link.src = this.ingredients[e.target.innerText].img;
       link.id = e.target.innerText;
   
-      // document.getElementsByClassName('image')[0].appendChild(carbonPerItem);
       document.getElementsByClassName('image')[0].appendChild(link);
     }
   }
@@ -61,8 +56,9 @@ class dropDown {
     }
 
   removeImage(e) {
-    let parentImg = document.querySelector('.image')
+    let parentImg = document.querySelector('.image');
     e.target.remove();
+
   }
 }
 
