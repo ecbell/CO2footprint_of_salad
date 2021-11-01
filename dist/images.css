@@ -4,11 +4,12 @@ img {
 }
 
 #salad-bowl {
-  width: 400px;
-  height: 500px
+  position: absolute;
+  left: 55%;
+  bottom: 5%;
 }
-
 
 .image:hover p {
   display: inline-block;
 }
+
