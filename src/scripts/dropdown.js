@@ -5,11 +5,14 @@ class dropDown {
   constructor (parent, ingredients) {
     this.parent = parent
     this.ingredients = ingredients
+    this.counter = 0
 
     this.parent.addEventListener('mouseenter', this.handleEnter.bind(this));
     this.parent.addEventListener('mouseleave', this.handleLeave.bind(this));
     document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
-    
+    document.getElementById("dropdown").addEventListener('click', this.handleclick.bind(this));
+
+
     let image = document.getElementsByClassName("image")
     image[0].addEventListener("click", this.removeImage.bind(this));
     image[0].addEventListener("mouseover", this.mouseOverImage.bind(this))
@@ -58,7 +61,18 @@ class dropDown {
   removeImage(e) {
     let parentImg = document.querySelector('.image');
     e.target.remove();
+    console.log(this.counter)
 
+  }
+
+
+  handleclick(e) {
+    if (e.currentTarget !== e.target) {
+      this.numImages += 1
+      let count = this.counter += this.ingredients[e.target.innerText].averageCO2
+      let average = (count).toFixed(2)
+      document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
+    }
   }
 }
 

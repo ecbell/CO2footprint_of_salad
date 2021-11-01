@@ -1,7 +1,7 @@
 // import Example from "./scripts/example";
 import ingredients from "./scripts/items";
 import dropDown from "./scripts/dropdown"
-import carbonCounter from "./scripts/carbon_counter"
+// import carbonCounter from "./scripts/carbon_counter"
 
 document.addEventListener("DOMContentLoaded",() => {
 console.log("Hello World");
@@ -16,7 +16,7 @@ console.log("Hello World");
   items.createLi()
 
   // create counter
-  const counter = new carbonCounter(element, ingredients)
+  // const counter = new carbonCounter(element, ingredients)
 
 })
 
