@@ -5,11 +5,18 @@ img {
 
 #salad-bowl {
   position: absolute;
-  left: 55%;
-  bottom: 5%;
+  left: calc(55%);
+  bottom: calc(50px);
 }
 
-.image:hover p {
+/* .image:hover p {
   display: inline-block;
+} */
+
+div.image {
+  position: absolute;
+  left: calc(50%);
+  margin-top: -200px;
+  
 }
 

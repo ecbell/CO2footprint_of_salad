@@ -57,7 +57,7 @@ class dropDown {
   mouseOverImage(e) {
     if (e.target.nodeName === "IMG") {
       const carbonDisplay = document.getElementById("CO2perItem")
-      carbonDisplay.innerText = this.ingredients[e.target.id].averageCO2
+      carbonDisplay.innerText = this.ingredients[e.target.id].averageCO2 + `g CO2` + `\n` + this.ingredients[e.target.id].description
     }
   }
 
@@ -80,7 +80,7 @@ class dropDown {
     document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
   }
 
-  
+
 }
 
 

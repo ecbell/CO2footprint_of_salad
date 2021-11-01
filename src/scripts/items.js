@@ -3,6 +3,7 @@ const ingredients = {
   'avocado': {
     'averageCO2': 0.5,
     'serving': '1 avocado',
+    'description': 'eating one avocado is equivalent to driving your car 10 miles',
     'img':'https://c.tenor.com/PoQiAy3gTYcAAAAj/avocado-avocado-toast.gif'
   },
 
