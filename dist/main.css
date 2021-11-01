@@ -16,10 +16,16 @@
 }
 
 .title {
-  font-size: 80px;
-  border: solid 2px;
+  border: 2px;
+  border-style:dashed;
+  border-color:grey;
+  border-radius: 10px;
   width: 100%;
-  
+  text-align: center;
+  font-family: 'Neucha', cursive;
+  font-size: 80px;
+  font-weight: 200;
+  color: darkgreen;
 }
 
 .nav-bar {
@@ -29,8 +35,6 @@
   margin-top: 55px;
   margin-left: 15px;
   margin-right: 10px;
-  /* display: flex;
-  justify-content: center; */
   width: 650px;
 }
 
