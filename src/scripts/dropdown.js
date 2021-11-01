@@ -8,9 +8,10 @@ class dropDown {
     this.parent.addEventListener('mouseleave', this.handleLeave.bind(this));
     document.getElementById("dropdown").addEventListener("click", this.clickEvent.bind(this));
     
-    this.parent.addEventListener("click", this.removeImage.bind(this));
-    
     let image = document.getElementsByClassName("image")
+
+    image[0].addEventListener("click", this.removeImage.bind(this));
+    
     image[0].addEventListener("mouseover", this.mouseOverImage.bind(this))
 
     
@@ -43,7 +44,7 @@ class dropDown {
       // const carbonPerItem = document.createElement("p")
       // carbonPerItem.id = e.target.innerText
       // carbonPerItem.innerHTML = this.ingredients[e.target.innerText].averageCO2;
-      // carbonPerItem.setAttribute('hidden', true)
+      // // carbonPerItem.setAttribute('hidden', true)
       link.src = this.ingredients[e.target.innerText].img;
       link.id = e.target.innerText;
   
@@ -61,16 +62,18 @@ class dropDown {
 
   removeImage(e) {
     let parentImg = document.querySelectorAll('.image')
-    // console.log(parentImg)
-  
-    let currentImages = document.querySelectorAll("p")
-    // console.log(currentImages)
-    // console.log(this.ingredients[e.target.innerText].img)
-    // for (let i = 0; i < currentImages.length; i++) {
-    //   const el = currentImages[i] 
-    //   console.log(el)
-    //   parentImg.removeChild(el)
+    // console.log(parentImg[0].children)
+    let childImage = parentImg[0].children
+    // childImage[0].remove()
+    for (let i = 0; i < childImage.length - 1; i++) {
+      childImage[i].remove()
+
+      // console.log(parentImg[0])
+      // console.log(el.remove())
       
+    }
+
+    
 
     //   // closeImg[i].addEventListener('click', function () {
     //   //   var imgWrap = this.parentElement;
