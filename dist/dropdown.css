@@ -2,7 +2,7 @@
   height: 20vh;
   position: relative;
   overflow: auto;
-  width: 40vw;
+  width: 50vw;
   background-color: #D0F0C0;
   box-shadow: inset 0 0 5px grey;
   border-radius: 30px;
@@ -23,6 +23,7 @@
   display: block;
   margin: 1vw 5vw;
   font-size: 1.5em;
+  color: #004953;
 
 }
 
@@ -39,7 +40,5 @@
   color: tomato;
   margin-left: 2vw;
   margin-top: 2vh;
-
-
 }
 
