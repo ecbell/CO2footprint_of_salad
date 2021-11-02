@@ -17,8 +17,9 @@ class dropDown {
 
     let image = document.getElementsByClassName("image")
     image[0].addEventListener("click", this.removeImage.bind(this));
-    image[0].addEventListener("mouseover", this.mouseOverImage.bind(this))
-    image[0].addEventListener("mouseout", this.mouseLeaveImage.bind(this))
+    image[0].addEventListener("mouseover", this.mouseOverImage.bind(this));
+    image[0].addEventListener("mouseout", this.mouseLeaveImage.bind(this));
+
   }
 
   // Create the dropdown functionality
@@ -69,32 +70,18 @@ class dropDown {
   // functionality for removing text on carbon per ingredient when not moused over image
   mouseLeaveImage(e) {
     const carbonDisplay = document.getElementById("CO2perItem")
-    carbonDisplay.innerText = ""
+    carbonDisplay.innerText = "Scroll over the individual ingredients to view more information!"
   }
 
   // Create functionality to count carbon 
-  // handleclick(e) {
-  //   if (e.currentTarget !== e.target) {
-  //     let count = this.counter += this.ingredients[e.target.innerText].averageCO2
-  //     let average = (count).toFixed(2)
-  //     document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
-  //   }
-  // }
-
-  // add effects to the counters 
   handleclick(e) {
-    let counter = document.querySelector("#carbon-counter");
-    const count = parseInt(counter.innerText);
-    const speed = 200;
-    const target = this.counter += this.ingredients[e.target.innerText].averageCO2;
-    const increment = target / speed;
-
-    while (count !== target) {
-      setTimeout(() => {
-        counter.innerText = (count + increment)
-      }, 1000);
+    if (e.currentTarget !== e.target) {
+      let count = this.counter += this.ingredients[e.target.innerText].averageCO2
+      let average = (count).toFixed(2)
+      // document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
     }
   }
+
 
   // establish basic functionality to allow the user to remove an image.
   removeImage(e) {

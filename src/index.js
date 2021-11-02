@@ -24,6 +24,24 @@ document.addEventListener("DOMContentLoaded",() => {
   })
 
 
+    // add effects to the counters 
+    let carbonCounter = document.querySelector("#carbon-counter");
+    const count = parseInt(carbonCounter.innerText);
+    const speed = 200;
+    const target = items.counter += ingredients[e.target.innerText].averageCO2;
+    // const increment = target / speed;
+
+  //   setTimeout(() => {
+  //     counter.innerText = (count + increment)
+  //   }, 1000);
+
+  //   while (count < target) {
+     //   setTimeout(() => {
+  //     counter.innerText = (count + increment)
+  //   }, 1000);
+  //   }
+  // }
+
 
 })
 
