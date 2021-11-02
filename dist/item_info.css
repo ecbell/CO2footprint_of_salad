@@ -1,3 +1,6 @@
 #CO2perItem {
   font-size: 20px;
+  display: inline-block;
+  width: calc(40%);
+  margin-left: 20px;
 }

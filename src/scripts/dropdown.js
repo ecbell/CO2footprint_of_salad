@@ -57,7 +57,11 @@ class dropDown {
   mouseOverImage(e) {
     if (e.target.nodeName === "IMG") {
       const carbonDisplay = document.getElementById("CO2perItem")
-      carbonDisplay.innerText = this.ingredients[e.target.id].averageCO2 + `g CO2` + `\n` + this.ingredients[e.target.id].description
+      const servingItem = this.ingredients[e.target.id].serving
+      const averageCO2PerItem = this.ingredients[e.target.id].averageCO2 + `g CO2 per ${servingItem}`
+      const descriptionPerItem = this.ingredients[e.target.id].description
+
+      carbonDisplay.innerText = averageCO2PerItem + `\n\n` + descriptionPerItem 
     }
   }
 
@@ -71,6 +75,10 @@ class dropDown {
     }
   }
 
+  Leaveimage(e) {
+    
+  }
+
   // establish basic functionality to allow the user to remove an image.
   removeImage(e) {
     let parentImg = document.querySelector('.image');
@@ -79,8 +87,6 @@ class dropDown {
     let average = Math.abs(count).toFixed(2)
     document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
   }
-
-
 }
 
 
