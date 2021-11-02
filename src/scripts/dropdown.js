@@ -66,24 +66,38 @@ class dropDown {
     }
   }
 
-  // functionality for removing text when not moused over image
+  // functionality for removing text on carbon per ingredient when not moused over image
   mouseLeaveImage(e) {
     const carbonDisplay = document.getElementById("CO2perItem")
     carbonDisplay.innerText = ""
   }
 
   // Create functionality to count carbon 
+  // handleclick(e) {
+  //   if (e.currentTarget !== e.target) {
+  //     let count = this.counter += this.ingredients[e.target.innerText].averageCO2
+  //     let average = (count).toFixed(2)
+  //     document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
+  //   }
+  // }
+
+  // add effects to the counters 
   handleclick(e) {
-    if (e.currentTarget !== e.target) {
-      let count = this.counter += this.ingredients[e.target.innerText].averageCO2
-      let average = (count).toFixed(2)
-      document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
+    let counter = document.querySelector("#carbon-counter");
+    const count = parseInt(counter.innerText);
+    const speed = 200;
+    const target = this.counter += this.ingredients[e.target.innerText].averageCO2;
+    const increment = target / speed;
+
+    while (count !== target) {
+      setTimeout(() => {
+        counter.innerText = (count + increment)
+      }, 1000);
     }
   }
 
   // establish basic functionality to allow the user to remove an image.
   removeImage(e) {
-    let parentImg = document.querySelector('.image');
     e.target.remove();
     let count = this.counter -= this.ingredients[e.target.id].averageCO2
     let average = Math.abs(count).toFixed(2)
@@ -92,7 +106,7 @@ class dropDown {
     document.querySelector("#carbon-percent-counter").innerHTML = Math.abs(percent).toFixed(2) + "%"
   }
 
-  // creat functionality to add a percent-fait emissions counter:
+  // creat functionality to add a percent-fair emissions counter:
   handleclickPercent(e) {
     if (e.currentTarget !== e.target) {
       let count = this.percentCount += this.ingredients[e.target.innerText].percentEmissions
