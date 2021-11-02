@@ -11,6 +11,7 @@
   @import url(item_info.css);
 
 .styling {
+  margin-top: 4vh;
   display: flex;
   align-items: flex-start;
 }
