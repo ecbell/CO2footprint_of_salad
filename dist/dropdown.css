@@ -31,12 +31,14 @@
 
 .dropdown-title {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 40vw;
+  /* align-items: center; */
   left: 2vh;
   font-size: 2em;
   color: tomato;
   margin-left: 2vw;
-  white-space: normal;
+  /* white-space: normal; */
 
 }
 

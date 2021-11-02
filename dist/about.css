@@ -37,7 +37,7 @@
 }
 
 .about-content {
-  width: 48vw;
+  /* width: 48vw; */
   padding: 0 15px;
   display: inline-block;
   flex-flow: row wrap; 

@@ -8,22 +8,19 @@ body {
   justify-content:space-between;
   align-items:flex-start;  
   box-sizing: content-box;
-  width: 100vw;
 }
 
 .title {
-  width: 100vw;
+  width: 80vw;
   text-align: center;
   font-size: 5em;
   font-weight: 200;
   color: darkgreen;
-  margin-right: 10vw;
 }
 
 .nav-bar {
   padding: 0.5vh;
   margin-top: 5vh;
-  margin-right: 10vw;
   width: 65vw;
 }
 

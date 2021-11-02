@@ -1,4 +1,4 @@
-#carbon-counter {
+#carbon-counter, #carbon-percent-counter {
   left: 55vw;
   width: 30vw;
   text-align: center;
@@ -8,13 +8,13 @@
   padding: 5vh;
   font-size: 3rem;
   color: tomato;
-  
 }
+
 
 #carbon-counter-title{
   left: calc(30vw);
   text-align: center;
-  margin-top: -5vh;
+  margin:0rem;
   font-size: 3rem;
   color: tomato; 
 }
@@ -30,4 +30,5 @@
 .counter-items {
   margin-right: 2vw;
 }
+
 

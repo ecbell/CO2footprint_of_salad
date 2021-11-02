@@ -1,7 +1,5 @@
-// import Example from "./scripts/example";
 import ingredients from "./scripts/items";
 import dropDown from "./scripts/dropdown"
-// import carbonCounter from "./scripts/carbon_counter"
 
 
 document.addEventListener("DOMContentLoaded",() => {
