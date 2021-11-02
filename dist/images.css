@@ -1,22 +1,20 @@
 img {
-  width: 100px;
-  height: 100px;
+  width: 10vw;
+  height: 13vh;
 }
 
-#salad-bowl {
+/* #salad-bowl {
   position: absolute;
   left: calc(55%);
   bottom: calc(50px);
-}
-
-/* .image:hover p {
-  display: inline-block;
 } */
+
 
 div.image {
   position: absolute;
-  left: calc(50%);
-  margin-top: -200px;
-  
+  left: calc(60%);
+  margin-top: -150px;
+  display: flex;
+  justify-content: space-between;
 }
 

@@ -17,7 +17,7 @@ class dropDown {
     let image = document.getElementsByClassName("image")
     image[0].addEventListener("click", this.removeImage.bind(this));
     image[0].addEventListener("mouseover", this.mouseOverImage.bind(this))
-
+    image[0].addEventListener("mouseout", this.mouseLeaveImage.bind(this))
   }
 
   // Create the dropdown functionality
@@ -65,18 +65,19 @@ class dropDown {
     }
   }
 
+  // functionality for removing text when not moused over image
+  mouseLeaveImage(e) {
+    const carbonDisplay = document.getElementById("CO2perItem")
+    carbonDisplay.innerText = ""
+  }
+
   // Create functionality to count carbon 
   handleclick(e) {
     if (e.currentTarget !== e.target) {
-      this.numImages += 1
       let count = this.counter += this.ingredients[e.target.innerText].averageCO2
       let average = (count).toFixed(2)
       document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
     }
-  }
-
-  Leaveimage(e) {
-    
   }
 
   // establish basic functionality to allow the user to remove an image.

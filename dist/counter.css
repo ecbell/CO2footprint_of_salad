@@ -1,21 +1,33 @@
 #carbon-counter {
-  position: absolute;
-  left: calc(55vw);
-  width: 30%;
+  left: 55vw;
+  width: 30vw;
   text-align: center;
-  margin: 10px;
-  border: dotted 1px;
-  margin-top: 10px;
-  padding: 40px;
-  font-size: 40px;
-  color: tomato; 
+  border: dotted 0.1em;
+  border-radius: 30px;
+  height: 5vh;
+  padding: 5vh;
+  font-size: 3rem;
+  color: tomato;
+  
 }
 
 #carbon-counter-title{
-  position: absolute;
-  left: calc(68vw);
-  margin-top: -25px;
-  font-size: 25px;
+  left: calc(30vw);
+  text-align: center;
+  margin-top: -5vh;
+  font-size: 3rem;
   color: tomato; 
-
 }
+
+.pop-out {
+  text-align: center;
+  margin-top: -2vh;
+  font: bold;
+  text-decoration: underline; 
+  font-size: 1rem;
+}
+
+.counter-items {
+  margin-right: 2vw;
+}
+

@@ -1,5 +1,6 @@
 body {
   background-image: url('../assets/thin-leaves.jpg');
+  font-family: 'Neucha', cursive;
 }
 
 .header {
@@ -7,23 +8,23 @@ body {
   justify-content:space-between;
   align-items:flex-start;  
   box-sizing: content-box;
-  width: 100%;
+  width: 100vw;
 }
 
 .title {
-  width: 100%;
+  width: 100vw;
   text-align: center;
-  font-family: 'Neucha', cursive;
-  font-size: 80px;
+  font-size: 5em;
   font-weight: 200;
   color: darkgreen;
+  margin-right: 10vw;
 }
 
 .nav-bar {
-  padding: 1px;
-  margin-top: 55px;
-  margin-left: 15px;
-  width: 650px;;
+  padding: 0.5vh;
+  margin-top: 5vh;
+  margin-right: 10vw;
+  width: 65vw;
 }
 
 a {
@@ -34,7 +35,7 @@ a {
 .nav-bar > li {
   list-style: none;
   float: left;
-  font-size: 15px;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -45,9 +46,10 @@ a {
 
   .nav-bar a {
     display: block;
-    padding: 20px;
+    padding: 2vw;
   }
 
   .nav-bar a:hover {
-    background: cornsilk;
+    text-decoration: cornsilk line-through;
+    text-decoration-thickness: 0.2em;
   }

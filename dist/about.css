@@ -2,19 +2,21 @@
   background-color: #568203;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 20px;
   border: none;
   text-align: left;
   /* outline: none; */
   font-size: 20px;
   transition: 0.2s;
-  margin-left: 20px
+  width: 50vw;
 
 }
 
 .about-info, .about-content{
-  width: 50%;
-  display: inline-block;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  white-space: normal;
+
 
 }
 
@@ -37,8 +39,9 @@
 }
 
 .about-content {
+  width: 48vw;
   padding: 0 15px;
- /* display: inline-block; */
+  display: inline-block;
   flex-flow: row wrap; 
   overflow: hidden;
   max-height: 0px;
