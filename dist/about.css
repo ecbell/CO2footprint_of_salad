@@ -5,7 +5,7 @@
   padding: 20px;
   border: none;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.25rem;
   text-align: center;
   transition: 0.2s;
   width: 50vw;
@@ -43,7 +43,6 @@
 }
 
 .about-content {
-  /* width: 48vw; */
   padding: 0 15px;
   display: inline-block;
   flex-flow: row wrap; 
@@ -55,12 +54,12 @@
 }
 
 .bold{
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: underline;
 }
 
 .text {
   margin-top: 2vh;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 

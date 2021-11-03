@@ -6,13 +6,13 @@
   left: 55vw;
   width: 35vw;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   color: tomato;  
 }
 
 #carbon-counter-title span, #carbon-percent-counter-title span {
   left: 30vw;
-  font-size: 3rem;
+  font-size: 2rem;
   color: tomato; 
 }
 
@@ -22,7 +22,7 @@
   margin-bottom: 1vh;
   font: bold;
   text-decoration: underline; 
-  font-size: 1rem;
+  font-size: 0.75em;
   color: #004953;
 }
 

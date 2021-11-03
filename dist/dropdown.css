@@ -15,7 +15,6 @@
 .item {
   display: none;
   color:#444C38;
-  /* text-decoration: none; */
 
 }
 
@@ -32,13 +31,16 @@
 }
 
 .dropdown-title {
-  margin: 0rem;
-  width: 40vw;
-  align-items: center;
+  width: 50vw;
+  text-align: center;
   left: 2vh;
-  font-size: 2em;
+  font-size: 1.75rem;
   color: tomato;
   margin-left: 2vw;
-  margin-top: 2vh;
+  margin-top: 4vh;
+}
+
+#span-title {
+  background-color: white;
 }
 

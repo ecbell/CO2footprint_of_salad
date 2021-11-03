@@ -3,26 +3,39 @@ img {
   height: 10vh;
   display: inline-block;
   flex-wrap: wrap;
+  margin-top: -7vh;
 }
+
 
 div.menu {
   display: absolute;
   float: left;
   margin-left: 2rem;
   flex-wrap: wrap;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #004953;
-  margin-top: -3vh;
+  margin-top: -10vh;
 } 
+
+#menu-title {
+  background-color: white;
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+}
 
 
 #CO2perItem {
   display: absolute;
-  padding-bottom: 10rem;
   flex-direction: row;
   float:right;
-  font-size: 1.5em;
-  width: 45vw;
-  margin-left: 2rem;
-  margin-top: 2vh;
+  font-size: 1rem;
+  width: 40vw;
+  color: white;
+  margin-right: 2rem;
+  margin-top: -1vh;
+  text-align: center;
+  background-color:tomato;
+  border:solid 4px #FEBE10;
+
 } 

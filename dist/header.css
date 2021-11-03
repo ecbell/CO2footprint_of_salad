@@ -1,6 +1,6 @@
 body {
   background-image: url('../assets/thin-leaves.jpg');
-  font-family: 'Neucha', cursive;
+  font-family: 'Merriweather', serif;
 }
 
 .header {
@@ -13,14 +13,13 @@ body {
 .title {
   width: 80vw;
   text-align: center;
-  font-size: 5em;
+  font-size: 4.5rem;
   font-weight: 200;
   color: darkgreen;
 }
 
 .nav-bar {
   padding: 0.5vh;
-  /* margin-top: 5vh; */
   width: 65vw;
 }
 
@@ -32,7 +31,7 @@ text-decoration: none;
 .nav-bar > li {
   list-style: none;
   float: left;
-  font-size: 1.5em;
+  font-size: 1.25rem;
   text-align: center;
 }
 
