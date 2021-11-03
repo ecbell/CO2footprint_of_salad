@@ -1,23 +1,28 @@
 img {
   width: 8vw;
   height: 10vh;
+  display: inline-block;
+  flex-wrap: wrap;
 }
 
-
-div.image {
-  position: fixed;
-  display: flex;
+div.menu {
+  display: absolute;
+  float: left;
+  margin-left: 2rem;
   flex-wrap: wrap;
-  margin-left: 60vw;
-  margin-top: 45vh;
+  font-size: 2rem;
+  color: #004953;
+  margin-top: -3vh;
 } 
 
-div.menu {
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 60vw;
-  margin-top: 40vh;
-  font-size: 1.8rem;
-  color: #004953;
+
+#CO2perItem {
+  display: absolute;
+  padding-bottom: 10rem;
+  flex-direction: row;
+  float:right;
+  font-size: 1.5em;
+  width: 45vw;
+  margin-left: 2rem;
+  margin-top: 2vh;
 } 

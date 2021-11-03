@@ -94,7 +94,6 @@ class dropDown {
     }
   }
 
-
   // establish basic functionality to allow the user to remove an image.
   removeImage(e) {
     e.target.remove();
