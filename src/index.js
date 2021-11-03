@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded",() => {
   // Create a pop-out
   const popOut = document.querySelectorAll(".pop-out")[0]
   let toggle = document.getElementById('toggle').setAttribute('hidden', true)
-  let text = document.getElementById('toggle').innerText;
+  let text = document.getElementById('toggle').innerHTML;
+  console.log(document.getElementById('toggle'))
   popOut.addEventListener('click', () => {
     let textPopOut = document.getElementById("popouttext");
 
@@ -39,6 +40,9 @@ document.addEventListener("DOMContentLoaded",() => {
       textPopOut.innerHTML = ""
     }
   })
+
+  // remove the pop-out 
+  
 
 })
 

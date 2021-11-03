@@ -24,6 +24,7 @@
   text-decoration: underline; 
   font-size: 0.75em;
   color: #004953;
+  cursor: pointer;
 }
 
 .counter-items {
@@ -39,7 +40,23 @@
 #popouttext {
   background-color: #555;
   color: #fff;
+  text-align: left;
 }
+
+#pop-out-title {
+  text-decoration: underline;
+}
+
+.popouttext--show {
+  padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+
 
 
 
