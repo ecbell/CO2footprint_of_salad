@@ -24,18 +24,13 @@ class dropDown {
   }
 
 // need to fix async motion.
-  // updateCount() {
-  //   console.log('read this')
-  //   console.log(parseInt(document.querySelector("#carbon-counter").innerText))
-  //   console.log(this.counter)
-  //   while (parseInt(parseInt(document.querySelector("#carbon-counter").innerText)) < this.counter) {
-  //     console.log('getting there')
-  //     setTimeout(() => {
-  //       console.log('hi!')
-  //       document.querySelector("#carbon-counter").innerText = (parseInt(document.querySelector("#carbon-counter").innerText) + (this.counter / 200))
-  //     }, 1000);
-  //   }
-  // }
+  updateCount() {
+    console.log(parseInt(document.querySelector("#carbon-counter").innerText))
+    console.log(this.counter)
+    setTimeout(() => {
+      document.querySelector("#carbon-counter").innerText = (parseInt(document.querySelector("#carbon-counter").innerText) + Math.trunc(this.counter / 300)) + "g CO2e"
+      }, 100);
+  }
 
 
   // Create the dropdown functionality
@@ -95,7 +90,7 @@ class dropDown {
       let count = this.counter += this.ingredients[e.target.innerText].averageCO2
       let average = (count).toFixed(2)
       document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
-      // this.updateCount();
+        this.updateCount();
     }
   }
 
@@ -108,6 +103,8 @@ class dropDown {
     let percent = this.percentCount -= this.ingredients[e.target.id].percentEmissions
     document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
     document.querySelector("#carbon-percent-counter").innerHTML = Math.abs(percent).toFixed(2) + "%"
+    const carbonDisplay = document.getElementById("CO2perItem")
+    carbonDisplay.innerText = "Scroll over the individual ingredients to view more information!"
   }
 
   // creat functionality to add a percent-fair emissions counter:

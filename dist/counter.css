@@ -25,7 +25,6 @@
   text-decoration: underline; 
   font-size: 1rem;
   color: #004953;
-
 }
 
 .counter-items {
@@ -33,21 +32,11 @@
 }
 
 #popouttext {
-  visibility: hidden;
   background-color: #555;
   color: #fff;
 }
 
-/* the pop-up text under the counter */
-.popouttext--show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
 
-/* Popup arrow */
-#popouttext::after {
-  content: "";
-}
+
 
 

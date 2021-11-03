@@ -26,14 +26,17 @@ document.addEventListener("DOMContentLoaded",() => {
 
   // Create a pop-out
   const popOut = document.querySelectorAll(".pop-out")[0]
+  let toggle = document.getElementById('toggle').setAttribute('hidden', true)
+  let text = document.getElementById('toggle').innerText;
   popOut.addEventListener('click', () => {
-    let text = document.getElementById("popouttext");
-    console.log(text.innerHTML)
-    text.classList.toggle("popouttext--show");
-    if (text.classList.contains('popouttext--show')) {
-      text.innerHTML = "hello"
+    let textPopOut = document.getElementById("popouttext");
+
+    textPopOut.classList.toggle("popouttext--show");
+
+    if (textPopOut.classList.contains('popouttext--show')) {
+      textPopOut.innerHTML = text
     } else {
-      text.innerHTML = ""
+      textPopOut.innerHTML = ""
     }
   })
 
