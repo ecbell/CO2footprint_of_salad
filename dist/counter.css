@@ -1,26 +1,25 @@
-#carbon-counter, #carbon-percent-counter {
+#carbon-counter,  #carbon-percent-counter {
+  background-color: cornsilk;
+  padding: 1rem;
+  border: 3px #00674b solid;
+  box-shadow: 5px 5px #18453B;
   left: 55vw;
   width: 35vw;
   text-align: center;
-  padding: 3vh;
   font-size: 3rem;
-  color: tomato;
+  color: tomato;  
 }
 
-
-#carbon-counter-title, #carbon-percent-counter-title {
-  left: calc(30vw);
-  border: dotted 0.1em;
-  border-radius: 20px;
-  text-align: center;
-  margin:0rem;
+#carbon-counter-title span, #carbon-percent-counter-title span {
+  left: 30vw;
   font-size: 2.5rem;
   color: tomato; 
 }
 
 .pop-out {
   text-align: center;
-  margin-top: -2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   font: bold;
   text-decoration: underline; 
   font-size: 1rem;
@@ -29,6 +28,11 @@
 
 .counter-items {
   margin-right: 2vw;
+  background-color: white;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10%;
+  width: 500vw;
+  text-align: center;
 }
 
 #popouttext {

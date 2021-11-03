@@ -28,8 +28,8 @@ class dropDown {
     console.log(parseInt(document.querySelector("#carbon-counter").innerText))
     console.log(this.counter)
     setTimeout(() => {
-      document.querySelector("#carbon-counter").innerText = (parseInt(document.querySelector("#carbon-counter").innerText) + Math.trunc(this.counter / 300)) + "g CO2e"
-      }, 100);
+      document.querySelector("#carbon-counter").innerText = (parseInt(document.querySelector("#carbon-counter").innerText) + Math.trunc(this.counter / 200)) + "g CO2e"
+      }, 1);
   }
 
 
