@@ -6,7 +6,8 @@
   border: none;
   text-align: left;
   /* outline: none; */
-  font-size: 20px;
+  font-size: 1.5em;
+  text-align: center;
   transition: 0.2s;
   width: 50vw;
 
@@ -47,3 +48,14 @@
   transition: max-height 0.2s;
   background-color: #A9BA9D;
 }
+
+.bold{
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.text {
+  margin-top: 2vh;
+  font-size: 1.25em;
+}
+

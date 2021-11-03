@@ -19,8 +19,24 @@ class dropDown {
     image[0].addEventListener("click", this.removeImage.bind(this));
     image[0].addEventListener("mouseover", this.mouseOverImage.bind(this));
     image[0].addEventListener("mouseout", this.mouseLeaveImage.bind(this));
-
+  
+    
   }
+
+// need to fix async motion.
+  // updateCount() {
+  //   console.log('read this')
+  //   console.log(parseInt(document.querySelector("#carbon-counter").innerText))
+  //   console.log(this.counter)
+  //   while (parseInt(parseInt(document.querySelector("#carbon-counter").innerText)) < this.counter) {
+  //     console.log('getting there')
+  //     setTimeout(() => {
+  //       console.log('hi!')
+  //       document.querySelector("#carbon-counter").innerText = (parseInt(document.querySelector("#carbon-counter").innerText) + (this.counter / 200))
+  //     }, 1000);
+  //   }
+  // }
+
 
   // Create the dropdown functionality
   createLi() {
@@ -60,10 +76,10 @@ class dropDown {
     if (e.target.nodeName === "IMG") {
       const carbonDisplay = document.getElementById("CO2perItem")
       const servingItem = this.ingredients[e.target.id].serving
-      const averageCO2PerItem = this.ingredients[e.target.id].averageCO2 + `g CO2 per ${servingItem}`
+      const averageCO2PerItem = this.ingredients[e.target.id].averageCO2 + `g CO2 per ${servingItem}` + ` of ${e.target.id}`
       const descriptionPerItem = this.ingredients[e.target.id].description
-
-      carbonDisplay.innerText = averageCO2PerItem + `\n\n` + descriptionPerItem 
+      const funFacts = `Fun Facts:\n\n`
+      carbonDisplay.innerText = funFacts + `Serving size: ` + averageCO2PerItem + `\n\n` + descriptionPerItem
     }
   }
 
@@ -78,7 +94,8 @@ class dropDown {
     if (e.currentTarget !== e.target) {
       let count = this.counter += this.ingredients[e.target.innerText].averageCO2
       let average = (count).toFixed(2)
-      // document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
+      document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
+      // this.updateCount();
     }
   }
 
