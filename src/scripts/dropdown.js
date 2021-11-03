@@ -90,7 +90,7 @@ class dropDown {
       let count = this.counter += this.ingredients[e.target.innerText].averageCO2
       let average = (count).toFixed(2)
       document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
-        this.updateCount();
+        // this.updateCount();
     }
   }
 
