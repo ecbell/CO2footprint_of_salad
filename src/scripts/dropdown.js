@@ -23,14 +23,14 @@ class dropDown {
     
   }
 
-// need to fix async motion.
-  updateCount() {
-    console.log(parseInt(document.querySelector("#carbon-counter").innerText))
-    console.log(this.counter)
-    setTimeout(() => {
-      document.querySelector("#carbon-counter").innerText = (parseInt(document.querySelector("#carbon-counter").innerText) + Math.trunc(this.counter / 200)) + "g CO2e"
-      }, 1);
-  }
+// need to fix async motion. -> to do for later
+  // updateCount() {
+  //   console.log(parseInt(document.querySelector("#carbon-counter").innerText))
+  //   console.log(this.counter)
+  //   setTimeout(() => {
+  //     document.querySelector("#carbon-counter").innerText = (parseInt(document.querySelector("#carbon-counter").innerText) + Math.trunc(this.counter / 200)) + "g CO2e"
+  //     }, 1);
+  // }
 
 
   // Create the dropdown functionality

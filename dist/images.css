@@ -3,7 +3,8 @@ img {
   height: 10vh;
   display: inline-block;
   flex-wrap: wrap;
-  margin-top: -7vh;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
 }
 
 
@@ -34,7 +35,9 @@ div.menu {
   color: white;
   margin-right: 2rem;
   margin-top: -1vh;
+  margin-bottom: 20vh;
   text-align: center;
+  padding: 20px;
   background-color:tomato;
   border:solid 4px #FEBE10;
 
