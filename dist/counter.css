@@ -3,18 +3,18 @@
   width: 35vw;
   text-align: center;
   padding: 3vh;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: tomato;
 }
 
 
-#carbon-counter-title{
+#carbon-counter-title, #carbon-percent-counter-title {
   left: calc(30vw);
   border: dotted 0.1em;
   border-radius: 20px;
   text-align: center;
   margin:0rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: tomato; 
 }
 
@@ -30,6 +30,24 @@
 
 .counter-items {
   margin-right: 2vw;
+}
+
+#popouttext {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+}
+
+/* the pop-up text under the counter */
+.popouttext--show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Popup arrow */
+#popouttext::after {
+  content: "";
 }
 
 

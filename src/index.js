@@ -24,6 +24,18 @@ document.addEventListener("DOMContentLoaded",() => {
     })
   })
 
+  // Create a pop-out
+  const popOut = document.querySelectorAll(".pop-out")[0]
+  popOut.addEventListener('click', () => {
+    let text = document.getElementById("popouttext");
+    console.log(text.innerHTML)
+    text.classList.toggle("popouttext--show");
+    if (text.classList.contains('popouttext--show')) {
+      text.innerHTML = "hello"
+    } else {
+      text.innerHTML = ""
+    }
+  })
 
 })
 
