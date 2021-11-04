@@ -24,7 +24,7 @@
 
 .about-info::after {
   content: '\2193';
-  float: right;
+  float: left;
   transform: scale(1.5);
   
 }
@@ -62,4 +62,6 @@
   margin-top: 2vh;
   font-size: 1.5em;
 }
+
+
 
