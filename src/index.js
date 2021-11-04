@@ -4,7 +4,6 @@ import dropDown from "./scripts/dropdown"
 
 document.addEventListener("DOMContentLoaded",() => {
   const element = document.getElementById("dropdown")
-  console.log(element)
 
   // create item list for dropdown
   const items = new dropDown(element, ingredients)
@@ -29,7 +28,7 @@ document.addEventListener("DOMContentLoaded",() => {
   let toggle = document.getElementById('toggle').setAttribute('hidden', true)
   let text = document.getElementById('toggle').innerHTML;
   popOut.addEventListener('click', () => {
-    let textPopOut = document.getElementById("popouttext");
+    const textPopOut = document.getElementById("popouttext");
 
     textPopOut.classList.toggle("popouttext--show");
 
@@ -40,7 +39,19 @@ document.addEventListener("DOMContentLoaded",() => {
     }
   })
 
-  // remove the pop-out 
+  // remove the pop-out
+  window.addEventListener('click', () => {
+    const popUp = document.getElementById("popouttext")
+    if (popOut.classList.contains('popouttext--show')) {
+      console.log(popUp)
+      
+    }
+    
+  })
+  
+  
+
+  
 
 
 })

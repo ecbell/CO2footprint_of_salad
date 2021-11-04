@@ -3,12 +3,10 @@
   \*************************************************************************************************************************************/
 
   @import url(reset.css);
-  @import url(header.css);
   @import url(about.css);
   @import url(counter.css);
   @import url(dropdown.css);
   @import url(images.css);
-  @import url(item_info.css);
 
 .styling {
   margin-top: 4vh;
@@ -16,6 +14,58 @@
   align-items: flex-start;
 }
 
+
+body {
+  background-image: url('../assets/thin-leaves.jpg');
+  font-family: 'Merriweather', serif;
+}
+
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items:flex-start;  
+  box-sizing: content-box;
+}
+
+.title {
+  width: 80vw;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 200;
+  color: darkgreen;
+}
+
+.nav-bar {
+  padding: 0.5vh;
+  width: 65vw;
+}
+
+a {
+color: #004953;
+text-decoration: none;
+}
+
+.nav-bar > li {
+  list-style: none;
+  float: left;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+  .nav-bar {
+    font-weight: bold;
+
+  }
+
+  .nav-bar a {
+    display: block;
+    padding: 2vw;
+  }
+
+  .nav-bar a:hover {
+    text-decoration: cornsilk line-through;
+    text-decoration-thickness: 0.2em;
+  }
 
 
 
