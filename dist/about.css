@@ -9,7 +9,6 @@
   text-align: center;
   transition: 0.2s;
   width: 50vw;
-
 }
 
 .about-info, .about-content{
@@ -20,6 +19,7 @@
 .about-content {
   position: absolute;
   z-index: 100;
+  font-size: 13px;
 }
 
 .about-info::after {
@@ -60,7 +60,7 @@
 
 .text {
   margin-top: 2vh;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 

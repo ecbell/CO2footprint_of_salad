@@ -15,6 +15,14 @@ const ingredients = {
     'description': 'Although eating an avocado produces roughly 18 - 20 times fewer carbon emissions than eating many meats, 320 liters of water are needed to grow 1 avocado. With climate change, communities are becoming more vulnerable to water scarcity.',
     'img':'https://c.tenor.com/PoQiAy3gTYcAAAAj/avocado-avocado-toast.gif'
   },
+  
+  'beef': {
+    'averageCO2': 5416,
+    'serving': '125 grams',
+    'percentEmissions': 177.8,
+    'description': 'Beef generates 100 kilos of CO2e emissions, of which 49% is methane. Did you know that by feeding cows seaweed, methane production could reduce up to 82%?',
+    'img': 'https://media0.giphy.com/media/cIt3fDRTK0mgqz0RZI/giphy.gif'
+  },
 
   'bell peppers': {
     'averageCO2': 91,
