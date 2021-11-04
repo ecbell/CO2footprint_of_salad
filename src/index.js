@@ -36,24 +36,15 @@ document.addEventListener("DOMContentLoaded",() => {
       textPopOut.innerHTML = text
     } else {
       textPopOut.innerHTML = ""
+
     }
   })
 
-  // remove the pop-out
-  window.addEventListener('click', () => {
-    const popUp = document.getElementById("popouttext")
-    if (popOut.classList.contains('popouttext--show')) {
-      console.log(popUp)
-      
-    }
-    
-  })
-  
-  
-
-  
 
 
+  
+  
+  
 })
 
 
