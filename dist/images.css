@@ -26,7 +26,7 @@ div.menu {
   float: left; */
   /* margin-left: 2rem; */
   flex-wrap: wrap;
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
   color: #004953;
   /* margin-top: -10vh; */
   width: 90%;
@@ -34,15 +34,16 @@ div.menu {
   background-color: #568203;
   width: 100%;
   margin-top: 9px;
-    background-color: #568203;
-    width: 95%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    /* right: 1px; */
-    margin-left: 21px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 1px rgb(0 0 1 / 20%);
+  background-color: #568203;
+  width: 95%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* right: 1px; */
+  margin-left: 21px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 1 / 20%);
+  font-size: 20px;
   
 } 
 
@@ -85,11 +86,23 @@ div.menu {
 }
 
 .closeBtn{
-      position: relative;
+      /* position: relative;
     display: flex;
     height: 20px;
     width: 20px;
+    order: 2; */
+    position: absolute;
+    display: flex;
+    height: 18px;
+    width: 18px;
     order: 2;
+    border: 1px #f2f2f2 solid;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    color: tomato;
+    background-color: #f2f2f2;
+    margin-left: 69px;
 }
 
 .flex-container{
