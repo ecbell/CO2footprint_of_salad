@@ -13,8 +13,12 @@
 }
 
 .item {
-  display: none;
+  /* display: none; */
   color:#444C38;
+    display: block;
+  margin: 1vw 5vw;
+  font-size: 1.5em;
+  color: #004953;
 
 }
 

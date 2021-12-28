@@ -19,8 +19,14 @@ class dropDown {
     image[0].addEventListener("click", this.removeImage.bind(this));
     image[0].addEventListener("mouseover", this.mouseOverImage.bind(this));
     image[0].addEventListener("mouseout", this.mouseLeaveImage.bind(this));
-  
+
+    // let button = document.getElementsByClassName("closeBtn")
+    // button[0].addEventListener("click", this.removeImage.bind(this));
     
+  
+    // document.addEventListener("click", this.removeImage.bind(this))
+
+
   }
 
 // need to fix async motion. -> to do for later
@@ -61,8 +67,21 @@ class dropDown {
     
       link.src = this.ingredients[e.target.innerText].img;
       link.id = e.target.innerText;
-  
-      document.getElementsByClassName('image')[0].appendChild(link);
+
+      let closeBtn = document.createElement('button');
+      // closeBtn.setAttribute("id", "closeBtn");
+      closeBtn.id = e.target.innerText;
+      closeBtn.className = "closeBtn"
+      closeBtn.innerText = "X";
+
+      let parent = document.createElement("div");
+      parent.className = "veggie"
+      parent.append(closeBtn)
+      parent.appendChild(link)
+      
+
+      // document.getElementsByClassName('image')[0].appendChild(link)
+      document.getElementsByClassName('image')[0].appendChild(parent)
     }
   }
 
@@ -96,14 +115,23 @@ class dropDown {
 
   // establish basic functionality to allow the user to remove an image.
   removeImage(e) {
-    e.target.remove();
-    let count = this.counter -= this.ingredients[e.target.id].averageCO2
-    let average = Math.abs(count).toFixed(2)
-    let percent = this.percentCount -= this.ingredients[e.target.id].percentEmissions
-    document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
-    document.querySelector("#carbon-percent-counter").innerHTML = Math.abs(percent).toFixed(2) + "%"
-    const carbonDisplay = document.getElementById("CO2perItem")
-    carbonDisplay.innerText = "Scroll over the individual ingredients to view more information!"
+    if (e.target.className === "closeBtn") {
+      // e.target.remove();
+      // console.log(e.target.parentElement.classList)
+
+      let image = document.getElementsByClassName("image")[0]
+      // console.log(image.classList)
+      e.target.parentElement.remove();
+
+
+      let count = this.counter -= this.ingredients[e.target.id].averageCO2
+      let average = Math.abs(count).toFixed(2)
+      let percent = this.percentCount -= this.ingredients[e.target.id].percentEmissions
+      document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
+      document.querySelector("#carbon-percent-counter").innerHTML = Math.abs(percent).toFixed(2) + "%"
+      const carbonDisplay = document.getElementById("CO2perItem")
+      carbonDisplay.innerText = "Scroll over the individual ingredients to view more information!"
+    }
   }
 
   // creat functionality to add a percent-fair emissions counter:
