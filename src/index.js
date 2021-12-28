@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded",() => {
       const aboutContent = button.nextElementSibling;
       button.classList.toggle('about-info--active');
       if (button.classList.contains('about-info--active')) {
-        aboutContent.style.maxHeight = aboutContent.scrollHeight + 'px'
+        // aboutContent.style.maxHeight = aboutContent.scrollHeight + 'px'
+        aboutContent.style.maxHeight = '470' + 'px'
+
       } else {
         aboutContent.style.maxHeight = 0;
       }
