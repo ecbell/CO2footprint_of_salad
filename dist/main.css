@@ -11,12 +11,24 @@
   margin-top: 4vh;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 35px;
 }
 
 
 body {
-  background-image: url('../assets/thin-leaves.jpg');
+  /* background-image: url('../assets/thin-leaves.jpg'); */
   font-family: 'Merriweather', serif;
+  /* opacity: 0.5; */
+}
+
+.bg {
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
 }
 
 .header {
@@ -27,11 +39,11 @@ body {
 }
 
 .title {
-  width: 80vw;
-  text-align: center;
-  font-size: 4.5rem;
-  font-weight: 200;
-  color: darkgreen;
+    width: 80%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: darkgreen;
 }
 
 .nav-bar {

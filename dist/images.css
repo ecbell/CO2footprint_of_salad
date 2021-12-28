@@ -1,5 +1,5 @@
 img {
-  width: 75px;
+  width: 60px;
   height: 75px;
   /* display: inline-block; */
   /* flex-wrap: wrap; */
@@ -9,22 +9,50 @@ img {
   /* flex-direction: row; */
 }
 
+.image{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.veggie-info{
+  order:1;
+
+}
 
 div.menu {
-  display: absolute;
-  float: left;
-  margin-left: 2rem;
+  /* display: absolute;
+  float: left; */
+  /* margin-left: 2rem; */
   flex-wrap: wrap;
   font-size: 1.75rem;
   color: #004953;
   /* margin-top: -10vh; */
+  width: 90%;
+  margin-top: 9px;
+  background-color: #568203;
+  width: 100%;
+  margin-top: 9px;
+    background-color: #568203;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* right: 1px; */
+    margin-left: 21px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 1 / 20%);
+  
 } 
 
 #menu-title {
-  background-color: white;
-  border-bottom: 2px solid currentColor;
+  /* background-color: white; */
+  /* border-bottom: 2px solid currentColor; */
   display: inline-block;
   line-height: 0.85;
+  margin: 10px 25px 10px;
+  color: white
 }
 
 
@@ -42,6 +70,8 @@ div.menu {
   padding: 20px;
   background-color:tomato;
   border:solid 4px #FEBE10;
+  position: absolute;
+  margin-left: 50px;
 
 } 
 
@@ -49,7 +79,9 @@ div.menu {
     width: 15%;
     display: flex;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
+    padding: 10px;
+    height: 60px;
 }
 
 .closeBtn{
@@ -58,4 +90,13 @@ div.menu {
     height: 20px;
     width: 20px;
     order: 2;
+}
+
+.flex-container{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 15px;
+
 }
