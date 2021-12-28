@@ -100,7 +100,7 @@ class dropDown {
   // functionality for removing text on carbon per ingredient when not moused over image
   mouseLeaveImage(e) {
     const carbonDisplay = document.getElementById("CO2perItem")
-    carbonDisplay.innerText = "Scroll over the individual ingredients to view more information!"
+    carbonDisplay.innerText = "Click on an ingredient to view more information!"
   }
 
   // Create functionality to count carbon 
@@ -130,7 +130,7 @@ class dropDown {
       document.querySelector("#carbon-counter").innerHTML = average + "g CO2e"
       document.querySelector("#carbon-percent-counter").innerHTML = Math.abs(percent).toFixed(2) + "%"
       const carbonDisplay = document.getElementById("CO2perItem")
-      carbonDisplay.innerText = "Scroll over the individual ingredients to view more information!"
+      carbonDisplay.innerText = "Click on an ingredient to view more information!"
     }
   }
 
