@@ -29,6 +29,9 @@ body {
   width: 100%;
   height: auto;
   z-index: -1;
+  object-fit: cover;
+
+  
 }
 
 .header {
@@ -47,8 +50,17 @@ body {
 }
 
 .nav-bar {
-  padding: 0.5vh;
-  width: 65vw;
+  width: 66%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border-bottom: 2px solid #004953; */
+  align-items: center;
+    /* left: 3px; */
+  /* margin: 7px; */
+  margin-right: 51px;
+
 }
 
 a {
@@ -59,7 +71,7 @@ text-decoration: none;
 .nav-bar > li {
   list-style: none;
   float: left;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   text-align: center;
 }
 
@@ -70,10 +82,10 @@ text-decoration: none;
 
   .nav-bar a {
     display: block;
-    padding: 2vw;
+    padding: 5px;
   }
 
   .nav-bar a:hover {
-    text-decoration: cornsilk line-through;
-    text-decoration-thickness: 0.2em;
+    /* text-decoration: cornsilk line-through; */
+    /* text-decoration-thickness: 0.2em; */
   }
