@@ -142,6 +142,7 @@ class dropDown {
       document.querySelector("#carbon-percent-counter").innerHTML = percent + "%"
     }
   }
+
 }
 
 

@@ -27,26 +27,50 @@ document.addEventListener("DOMContentLoaded",() => {
 
   // Create a pop-out
   const popOut = document.querySelectorAll(".pop-out")[0]
-  let toggle = document.getElementById('toggle').setAttribute('hidden', true)
+  let toggle = document.getElementById('toggle')
   let text = document.getElementById('toggle').innerHTML;
+  const textPopOut = document.getElementById("popouttext");
+
+  // popOut.addEventListener('click', () => {
+  //   const textPopOut = document.getElementById("popouttext");
+
+  //   textPopOut.classList.toggle("popouttext--show");
+
+  //   if (textPopOut.classList.contains('popouttext--show')) {
+  //     textPopOut.innerHTML = text
+  //   } else {
+  //     textPopOut.innerHTML = ""
+  //   }
+  // })
+
+  // popOut.addEventListener('click', () => {
+  //   const textPopOut = document.getElementById("popouttext");
+  //   textPopOut.classList.add("popouttext--show");
+  //   textPopOut.innerHTML = text
+  // })
+
+
+  //   console.log(textPopOut.classList.contains("popouttext--show"))
+  //   document.addEventListener('click', () => {
+  //     if (textPopOut.classList.contains("popouttext--show")) {
+  //       textPopOut.classList.remove("popouttext--show");
+  //       // textPopOut.innerHTML = ""
+  //   }
+  // })
+
+
   popOut.addEventListener('click', () => {
-    const textPopOut = document.getElementById("popouttext");
-
-    textPopOut.classList.toggle("popouttext--show");
-
-    if (textPopOut.classList.contains('popouttext--show')) {
-      textPopOut.innerHTML = text
-    } else {
-      textPopOut.innerHTML = ""
-
-    }
+        const textPopOut = document.getElementById("toggle");
+        textPopOut.classList.add('visible');
   })
 
+  const closeModal = document.querySelectorAll(".modal-backdrop")[0]
 
 
-  
-  
-  
+  closeModal.addEventListener('click', () => {
+    const textPopOut = document.getElementById("toggle");
+    textPopOut.classList.remove('visible');
+  })
 })
 
 

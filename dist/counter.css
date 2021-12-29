@@ -30,6 +30,9 @@
   font-size: 0.75em;
   color: #004953;
   cursor: pointer;
+
+
+
 }
 
 .counter-items {
@@ -47,6 +50,8 @@
   background-color: #A9BA9D;
   color: white;
   text-align: left;
+
+
 }
 
 #pop-out-title {
@@ -61,9 +66,77 @@
   transform: translate(-50%, -50%);
   width: 50%;
   box-shadow: 0px 0px 100px 1px #000;
+  z-index: 1;
 }
 
+#toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+  /* opacity: 0;
+  transition: all 0.3s ease;
 
+  padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  box-shadow: 0px 0px 100px 1px #000;
+  
+  background-color: teal; */
+}
+
+#toggle.visible {
+  opacity: 1;
+  visibility: visible;
+}
+#toggle.visible {
+  top: 25%;
+}
+
+.modal-backdrop {
+  background: rgba(#000, 0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  position: relative;
+  opacity: 0;
+  transition: all 0.3s ease;
+  padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  box-shadow: 0px 0px 100px 1px #000;
+  z-index: 1;
+}
+
+.pop-out-textbox{
+  position: fixed;
+  /* position: relative; */
+  /* opacity: 0; */
+  transition: all 0.3s ease;
+  padding: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 100%; */
+  box-shadow: 0px 0px 100px 1px #000;
+  z-index: 1;
+  background-color:#f2f2f2;
+}
 
 
 
