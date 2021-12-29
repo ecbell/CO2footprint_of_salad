@@ -1,6 +1,8 @@
+
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+
   @import url(reset.css);
   @import url(about.css);
   @import url(counter.css);
@@ -16,10 +18,12 @@
 
 
 body {
-  /* background-image: url('../assets/thin-leaves.jpg'); */
+  background-image: url('../assets/thin-leaves.jpg');
   font-family: 'Merriweather', serif;
-  /* opacity: 0.5; */
+  /* opacity: 0.6; */
+  /* background-size: 100% */
 }
+
 
 .bg {
   opacity: 0.6;
