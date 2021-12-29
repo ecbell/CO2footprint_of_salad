@@ -11,7 +11,7 @@ Although a fresh salad with vegetables, chicken, and nuts may seem light on the 
 1. Read instructions in the About section. Look on your plate or the ingredients you have in your fridge that you want to put in your salad.
 2. Navigate to the dropdown menu on the page and scroll to choose each ingredient in your salad. The ingredients will show up under the dropdown menu and the counter of average CO2e will tick up. 
 3. Mouse over each ingredient to see more information on each ingredient's footprint. 
-4. View the two counters: 1) the average CO2-footprint and 2) the percent fair daily emissions. Click the popup below the counters to see how they're meaured. 
+4. View the two counters: 1) the average CO2-footprint and 2) the percent fair daily emissions. Click the popup below the counters to see how they're measured. 
 5. If you want to delete an ingredient, you can click on the ingredient to delete it.
 
 NOTE: the data sources and referenced are in the about section of the webpage.
@@ -24,7 +24,7 @@ Users will be able to:
 - Delete ingredients from the 'menu'.
 - Mouse over dancing ingredients to read more information on the ingredients.
 - The 'About' will have click functionality - upon clicking, brief information on the page and about climate change will appear. As such, the user will be able to read information about the background of the data visualizer. 
-- read more inforomation about the counters.
+- read more information about the counters.
 
 <h3>Technologies, Libraries, APIs</h3>
 This project will be implemented with the following technologies:
