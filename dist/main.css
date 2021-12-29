@@ -51,21 +51,28 @@ body {
     font-size: 50px;
     font-weight: 600;
     color: darkgreen;
+    margin-top: 15px;
 }
 
 .nav-bar {
   width: 66%;
-  padding: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   /* border-bottom: 2px solid #004953; */
   align-items: center;
-    /* left: 3px; */
+  /* left: 3px; */
   /* margin: 7px; */
   margin-right: 51px;
-
+  background-color: #f2f2f2;
+  border: 1px solid;
+  margin-top: 20px;
+  border-color: #FEBE10;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 1 / 20%);
 }
+
 
 a {
 color: #004953;
@@ -77,6 +84,7 @@ text-decoration: none;
   float: left;
   /* font-size: 1.25rem; */
   text-align: center;
+  color: #004953;
 }
 
   .nav-bar {

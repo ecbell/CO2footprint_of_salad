@@ -11,6 +11,7 @@
   text-align: center;
   transition: 0.2s;
   width: 50vw;
+  margin-top: 15px;
 }
 
 .about-info, .about-content{
@@ -78,7 +79,7 @@
 
 .text {
   margin-top: 2vh;
-  font-size: 13px;
+  font-size: 15px;
   padding: 10px;
 }
 
