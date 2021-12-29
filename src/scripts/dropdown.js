@@ -17,7 +17,7 @@ class dropDown {
 
     let image = document.getElementsByClassName("image")
     image[0].addEventListener("click", this.removeImage.bind(this));
-    image[0].addEventListener("mouseover", this.mouseOverImage.bind(this));
+    image[0].addEventListener("click", this.mouseOverImage.bind(this));
     image[0].addEventListener("mouseout", this.mouseLeaveImage.bind(this));
 
     // let button = document.getElementsByClassName("closeBtn")
@@ -81,7 +81,11 @@ class dropDown {
       
 
       // document.getElementsByClassName('image')[0].appendChild(link)
-      document.getElementsByClassName('image')[0].appendChild(parent)
+      let noSalad = document.getElementById('no-ingredients');
+      if(noSalad) {
+        noSalad.parentNode.removeChild(noSalad);
+      }
+      document.getElementsByClassName('image')[0].appendChild(parent);
     }
   }
 
@@ -120,9 +124,16 @@ class dropDown {
       // console.log(e.target.parentElement.classList)
 
       let image = document.getElementsByClassName("image")[0]
-      // console.log(image.classList)
+      let children = document.querySelectorAll('.image .veggie');
+
       e.target.parentElement.remove();
 
+      if (children.length < 2) {
+        let noIng = document.createElement("p");
+        noIng.innerText = 'You currently have no ingredients in your salad.'
+        noIng.id = 'no-ingredients';
+        image.appendChild(noIng);
+      }
 
       let count = this.counter -= this.ingredients[e.target.id].averageCO2
       let average = Math.abs(count).toFixed(2)

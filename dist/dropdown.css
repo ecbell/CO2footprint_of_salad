@@ -74,3 +74,14 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+#no-ingredients{
+  padding: 15px;
+  width: 70%;
+  text-align: center;
+  font-size: 16px;
+  border: 1px black solid;
+  /* left: 3px; */
+  margin-left: 18px;
+  line-height: 1.5;
+}
